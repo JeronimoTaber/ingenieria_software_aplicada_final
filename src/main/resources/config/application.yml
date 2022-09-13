@@ -175,6 +175,13 @@ info:
 # ===================================================================
 
 jhipster:
+  logging:
+    use-json-format: true # By default, logs are not in Json format
+    logstash: # Forward logs to logstash over a socket, used by LoggingConfiguration
+      enabled: true
+      host: localhost
+      port: 5044
+      queue-size: 512
   clientApp:
     name: 'spaceApp'
   # By default CORS is disabled. Uncomment to enable.
